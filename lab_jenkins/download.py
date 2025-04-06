@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.preprocessing import OrdinalEncoder
 
 def download_data():
-    df = pd.read_csv('https://raw.githubusercontent.com/lkcka/MLops/refs/heads/main/co2.csv', delimiter = ',')
+    df = pd.read_csv('https://raw.githubusercontent.com/lkcka/MLops/refs/heads/main/Datasets/co2.csv', delimiter = ',')
     df.to_csv("co2.csv", index = False)
     return df
 
